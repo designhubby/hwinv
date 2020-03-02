@@ -7,7 +7,7 @@ using System.Web.Http;
 
 namespace hwinv.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class ValuesController : ApiController
     {
         // GET api/values
