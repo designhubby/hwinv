@@ -10,12 +10,14 @@ namespace hwinv.Models
     public class Device
     {
 
-        public int Id { get; set; }
+        public int DeviceId { get; set; }
 
         public string Service_tag { set; get; }
         public string Asset_tag { get; set; }
         public string Note { get; set; }
         public bool? Returned { get; set; }
+
+
 
     }
 }
