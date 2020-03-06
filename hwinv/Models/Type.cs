@@ -5,7 +5,9 @@ using System.Web;
 
 namespace hwinv.Models
 {
-    public class Tyoe
+    public class Type
     {
+        public int TypeId { get; set; }
+
     }
 }
