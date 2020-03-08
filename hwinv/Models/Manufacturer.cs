@@ -5,10 +5,10 @@ using System.Web;
 
 namespace hwinv.Models
 {
-    public class Type
+    public class Manufacturer
     {
-        public int TypeId { get; set; }
-        public string TypeName { get; set; }
+        public int ManufacturerId { get; set; }
+        public string ManufacturerName { get; set; }
         public virtual ICollection<Model> Models { get; set; }
     }
 }

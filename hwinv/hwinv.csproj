@@ -222,19 +222,33 @@
     <Compile Include="Migrations\202003020028583_Add_Device_Model.Designer.cs">
       <DependentUpon>202003020028583_Add_Device_Model.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202003040128462_Rename_Device_DeviceId.cs" />
-    <Compile Include="Migrations\202003040128462_Rename_Device_DeviceId.Designer.cs">
-      <DependentUpon>202003040128462_Rename_Device_DeviceId.cs</DependentUpon>
+    <Compile Include="Migrations\202003080616184_Add_Data_Model-Employee_Role_Dept.cs" />
+    <Compile Include="Migrations\202003080616184_Add_Data_Model-Employee_Role_Dept.Designer.cs">
+      <DependentUpon>202003080616184_Add_Data_Model-Employee_Role_Dept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003080639279_Added_Data_Models-Invoice_JuncUserDevice_Manu_Os_Type_Vendor-Update_Device_Employee.cs" />
+    <Compile Include="Migrations\202003080639279_Added_Data_Models-Invoice_JuncUserDevice_Manu_Os_Type_Vendor-Update_Device_Employee.Designer.cs">
+      <DependentUpon>202003080639279_Added_Data_Models-Invoice_JuncUserDevice_Manu_Os_Type_Vendor-Update_Device_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003080640205_Seed_Data-Types_Vendors_Os_Role.cs" />
+    <Compile Include="Migrations\202003080640205_Seed_Data-Types_Vendors_Os_Role.Designer.cs">
+      <DependentUpon>202003080640205_Seed_Data-Types_Vendors_Os_Role.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Device.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Invoice.cs" />
     <Compile Include="Models\JuncUserDevice.cs" />
+    <Compile Include="Models\Manufacturer.cs" />
     <Compile Include="Models\Model.cs" />
+    <Compile Include="Models\Os.cs" />
+    <Compile Include="Models\Role.cs" />
     <Compile Include="Models\Type.cs" />
-    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Vendor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -338,8 +352,14 @@
     <EmbeddedResource Include="Migrations\202003020028583_Add_Device_Model.resx">
       <DependentUpon>202003020028583_Add_Device_Model.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202003040128462_Rename_Device_DeviceId.resx">
-      <DependentUpon>202003040128462_Rename_Device_DeviceId.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202003080616184_Add_Data_Model-Employee_Role_Dept.resx">
+      <DependentUpon>202003080616184_Add_Data_Model-Employee_Role_Dept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003080639279_Added_Data_Models-Invoice_JuncUserDevice_Manu_Os_Type_Vendor-Update_Device_Employee.resx">
+      <DependentUpon>202003080639279_Added_Data_Models-Invoice_JuncUserDevice_Manu_Os_Type_Vendor-Update_Device_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003080640205_Seed_Data-Types_Vendors_Os_Role.resx">
+      <DependentUpon>202003080640205_Seed_Data-Types_Vendors_Os_Role.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

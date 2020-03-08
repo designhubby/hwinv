@@ -7,13 +7,13 @@ namespace hwinv.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Rename_Device_DeviceId : IMigrationMetadata
+    public sealed partial class Added_Data_ModelsInvoice_JuncUserDevice_Manu_Os_Type_VendorUpdate_Device_Employee : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Rename_Device_DeviceId));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Added_Data_ModelsInvoice_JuncUserDevice_Manu_Os_Type_VendorUpdate_Device_Employee));
         
         string IMigrationMetadata.Id
         {
-            get { return "202003040128462_Rename_Device_DeviceId"; }
+            get { return "202003080639279_Added_Data_Models-Invoice_JuncUserDevice_Manu_Os_Type_Vendor-Update_Device_Employee"; }
         }
         
         string IMigrationMetadata.Source

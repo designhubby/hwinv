@@ -16,6 +16,13 @@ namespace hwinv.Models
         public string Asset_tag { get; set; }
         public string Note { get; set; }
         public bool? Returned { get; set; }
+        public int ModelId { get; set; }
+        public Model Model { get; set; }
+        public int OsId { get; set; }
+        public Os Os { get; set; }
+        public int InvoiceId { get; set; }
+        public Invoice Invoice { get; set; }
+        public virtual ICollection<JuncUserDevice> JuncUserDevices { get; set; }
 
 
 

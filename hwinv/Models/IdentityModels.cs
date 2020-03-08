@@ -22,6 +22,16 @@ namespace hwinv.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Device> Device { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Department> Departments { get; set; }
+        public DbSet<EmpRole> EmpRoles { get; set; }
+        public DbSet<Invoice> Invoices { get; set; }
+        public DbSet<JuncUserDevice> JuncUserDevices { get; set; }
+        public DbSet<Manufacturer> Manufacturers { get; set; }
+        public DbSet<Model> Models { get; set; }
+        public DbSet<Os> Os { get; set; }
+        public DbSet<Type> Types { get;set; }
+        public DbSet<Vendor> Vendors { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
