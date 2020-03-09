@@ -11,13 +11,13 @@ namespace hwinv.Migrations
                 "dbo.Devices",
                 c => new
                     {
-                        Id = c.Int(nullable: false, identity: true),
+                        DeviceId = c.Int(nullable: false, identity: true),
                         Service_tag = c.String(),
                         Asset_tag = c.String(),
                         Note = c.String(),
                         Returned = c.Boolean(),
                     })
-                .PrimaryKey(t => t.Id);
+                .PrimaryKey(t => t.DeviceId);
             
         }
         

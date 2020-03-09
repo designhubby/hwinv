@@ -234,6 +234,18 @@
     <Compile Include="Migrations\202003080640205_Seed_Data-Types_Vendors_Os_Role.Designer.cs">
       <DependentUpon>202003080640205_Seed_Data-Types_Vendors_Os_Role.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202003092008100_Seed_Model_Manufacturers.cs" />
+    <Compile Include="Migrations\202003092008100_Seed_Model_Manufacturers.Designer.cs">
+      <DependentUpon>202003092008100_Seed_Model_Manufacturers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003092008564_Seed_Model_Models.cs" />
+    <Compile Include="Migrations\202003092008564_Seed_Model_Models.Designer.cs">
+      <DependentUpon>202003092008564_Seed_Model_Models.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003092046234_Seed_Model_Invoice.cs" />
+    <Compile Include="Migrations\202003092046234_Seed_Model_Invoice.Designer.cs">
+      <DependentUpon>202003092046234_Seed_Model_Invoice.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -360,6 +372,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202003080640205_Seed_Data-Types_Vendors_Os_Role.resx">
       <DependentUpon>202003080640205_Seed_Data-Types_Vendors_Os_Role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003092008100_Seed_Model_Manufacturers.resx">
+      <DependentUpon>202003092008100_Seed_Model_Manufacturers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003092008564_Seed_Model_Models.resx">
+      <DependentUpon>202003092008564_Seed_Model_Models.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003092046234_Seed_Model_Invoice.resx">
+      <DependentUpon>202003092046234_Seed_Model_Invoice.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
