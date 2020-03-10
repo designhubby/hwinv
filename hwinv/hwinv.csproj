@@ -45,8 +45,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoMapper, Version=9.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoMapper.9.0.0\lib\net461\AutoMapper.dll</HintPath>
+    <Reference Include="AutoMapper, Version=4.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.1.1\lib\net45\AutoMapper.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -177,6 +177,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\MappingProfile.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
@@ -211,6 +212,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Dtos\OsDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -245,6 +247,18 @@
     <Compile Include="Migrations\202003092046234_Seed_Model_Invoice.cs" />
     <Compile Include="Migrations\202003092046234_Seed_Model_Invoice.Designer.cs">
       <DependentUpon>202003092046234_Seed_Model_Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003101850200_Seed_Model_Users.cs" />
+    <Compile Include="Migrations\202003101850200_Seed_Model_Users.Designer.cs">
+      <DependentUpon>202003101850200_Seed_Model_Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003102108047_Seed_Model_Devices.cs" />
+    <Compile Include="Migrations\202003102108047_Seed_Model_Devices.Designer.cs">
+      <DependentUpon>202003102108047_Seed_Model_Devices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003102111165_Seed_Model_JuncUserDevices.cs" />
+    <Compile Include="Migrations\202003102111165_Seed_Model_JuncUserDevices.Designer.cs">
+      <DependentUpon>202003102111165_Seed_Model_JuncUserDevices.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
@@ -381,6 +395,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202003092046234_Seed_Model_Invoice.resx">
       <DependentUpon>202003092046234_Seed_Model_Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003101850200_Seed_Model_Users.resx">
+      <DependentUpon>202003101850200_Seed_Model_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003102108047_Seed_Model_Devices.resx">
+      <DependentUpon>202003102108047_Seed_Model_Devices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003102111165_Seed_Model_JuncUserDevices.resx">
+      <DependentUpon>202003102111165_Seed_Model_JuncUserDevices.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
