@@ -12,7 +12,8 @@ namespace hwinv.App_Start
     {
         public MappingProfile()
         {
-            
+            Mapper.CreateMap<Os, OsDto>();
+            Mapper.CreateMap<OsDto, Os>();
 
         }
     }
