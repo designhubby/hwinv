@@ -74,7 +74,14 @@ namespace hwinv.Controllers.Api
 
             var Dto_Item_Os_id = osDto.OsId;
 
-            var Db_Item_Os = _context.Os.Where(o => o.OsId == osDto.OsId);
+            var Db_Item_Os = _context.Os.SingleOrDefault(o => o.OsId == id);
+            
+            if (Db_Item_Os == null)
+            {
+                return NotFound();
+            }
+            Mapper.Map<OsDto, Os>(osDto, Db_Item_Os);
+            _context.SaveChanges();
 
             return Ok();
         }
