@@ -64,8 +64,19 @@ namespace hwinv.Controllers.Api
         }
 
         // PUT api/<controller>/5
-        public void Put(int id, [FromBody]string value)
+        [HttpPut]
+        public IHttpActionResult UpdateOss(int id, OsDto osDto)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            var Dto_Item_Os_id = osDto.OsId;
+
+            var Db_Item_Os = _context.Os.Where(o => o.OsId == osDto.OsId);
+
+            return Ok();
         }
 
         // DELETE api/<controller>/5
