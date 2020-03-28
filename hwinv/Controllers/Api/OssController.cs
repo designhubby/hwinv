@@ -2,6 +2,7 @@
 using hwinv.Dtos;
 using hwinv.Models;
 using System;
+using System.Net;
 using System.Linq;
 using System.Web.Http;
 
@@ -83,12 +84,22 @@ namespace hwinv.Controllers.Api
             Mapper.Map<OsDto, Os>(osDto, Db_Item_Os);
             _context.SaveChanges();
 
-            return Ok();
+            return Ok(osDto);
         }
 
         // DELETE api/<controller>/5
-        public void Delete(int id)
+        [HttpDelete]
+        public IHttpActionResult Delete(int id)
         {
+            var Db_Item_Oss = _context.Os.SingleOrDefault(o => o.OsId == id);
+            if(Db_Item_Oss == null)
+            {
+                throw new HttpResponseException(HttpStatusCode.NotFound);
+            }
+            _context.Os.Remove(Db_Item_Oss);
+            _context.SaveChanges();
+
+            return Ok();
         }
     }
 }
