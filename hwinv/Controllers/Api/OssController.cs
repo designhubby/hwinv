@@ -5,11 +5,12 @@ using System;
 using System.Net;
 using System.Linq;
 using System.Web.Http;
-
+using System.Web.Http.Cors;
 
 namespace hwinv.Controllers.Api
 {
     [AllowAnonymous]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class OssController : ApiController
     {
         private ApplicationDbContext _context;
